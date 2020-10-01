@@ -1,0 +1,85 @@
+.request {
+  padding: 32px 0;
+  background: #032D5D;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__label {
+    width: 100%;
+    max-width: 180px;
+  }
+  &__input {
+    border: none;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    &::placeholder {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+  &__select {
+    position: relative;
+    appearance: none;
+    max-height: 52px;
+    background-image: url('../images/select-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+  &__button {
+    border: 1px solid #fff;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 140px;
+    font-size: 16px;
+    color: #0B3367;
+    background-color: #fff;
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .form {
+    flex-wrap: wrap;
+    &__label {
+      margin-bottom: 23px;
+      flex-basis: 48%;
+      max-width: inherit;
+      &:last-of-type {
+        flex-basis: 100%;
+        margin-bottom: 0;
+      }
+    }
+    &__button {
+      margin: auto;
+      margin-top: 24px;
+      max-width: 280px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .request {
+    padding-top: 20px;
+  }
+  .form {
+    flex-direction: column;
+    &__label {
+      flex-basis: fill;
+      &:last-of-type {
+        flex-basis: 100%;
+      }
+    }
+    &__button {
+      margin: auto;
+      margin-top: 24px;
+      max-width: 280px;
+    }
+  }
+}
