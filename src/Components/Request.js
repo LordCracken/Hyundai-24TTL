@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import sendForm from './Functions/sendForm';
 
 const Request = () => (
   <section className="request">
     <div className="container">
-      <form action="server.php" method="POST" className="form request__form">
+      <form action="server.php" method="POST" className="form request__form" onSubmit={useEffect(sendForm, [])}>
         <label htmlFor="first-name" className="form__label">
           <input type="text" id="first-name" name="first-name" placeholder="First name" className="form__input" />
         </label>
@@ -19,12 +19,12 @@ const Request = () => (
         </label>
         <label htmlFor="location" className="form__label">
           <select id="location" name="location" className="form__input form__select">
-            <option value="location">Location</option>
-            <option value="location">Moscow</option>
-            <option value="location">New York</option>
+            <option>Location</option>
+            <option value="moscow">Moscow</option>
+            <option value="new-york">New York</option>
           </select>
         </label>
-        <button className="button form__button" onClick={sendForm}>Request</button>
+        <button className="button form__button">Request</button>
       </form>
     </div>
   </section>

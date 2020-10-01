@@ -14,7 +14,7 @@ const sendForm = () => {
     const formData = new FormData(event.target);
 
     formData.forEach((value, key) => body[key] = value);
-    if (body['name'] === ``) return;
+    for (const key in body) if (!body[key]) return;
 
     postData(body)
       .then(response => {
@@ -26,7 +26,6 @@ const sendForm = () => {
         console.error(error);
       });
   });
-
 };
 
 export default sendForm;
