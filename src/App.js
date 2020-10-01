@@ -4,6 +4,7 @@ import Hero from './Components/Hero';
 import Request from './Components/Request';
 import Benefits from './Components/Benefits';
 import Exterior from './Components/Exterior';
+import LearnMore from './Components/LearnMore';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Request />
       <Benefits />
       <Exterior />
+      <LearnMore />
     </>
   );
 }

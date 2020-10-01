@@ -1,0 +1,37 @@
+.learn-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 33px 20px 100px;
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__paragraph {
+    margin-bottom: 32px;
+    max-width: 500px;
+  }
+}
+.visit-button {
+  border: 1px solid #032D5D;
+  padding: 18px 0;
+  background: #032D5D;
+  width: 100%;
+  max-width: 213px;
+  font-family: 'Hyundai Sans Head KR' ,sans-serif;
+  font-size: 16px;
+  color: #fff;
+  &:hover {
+    background-color: transparent;
+    color: #032D5D;
+  }
+}
+@media (max-width: 576px) {
+  .learn-more {
+    padding-top: 0;
+    padding-bottom: 64px;
+    &__paragraph {
+      margin-bottom: 45px;
+    }
+  }
+}
