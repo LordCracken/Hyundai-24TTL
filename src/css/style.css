@@ -437,3 +437,126 @@ h1, h2, h3 {
     font-size: 16px;
   }
 }
+
+.exterior {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 20px 103px;
+  text-align: center;
+}
+
+.exterior__title {
+  margin-bottom: 8px;
+}
+
+.exterior__paragraph {
+  margin-bottom: 42px;
+  max-width: 740px;
+}
+
+.exterior__slider.swiper-container {
+  max-width: 1080px;
+  overflow: visible;
+}
+
+.exterior__slide {
+  max-width: 1080px;
+}
+
+.exterior__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.exterior__scrollbar.swiper-scrollbar {
+  position: absolute;
+  bottom: 67px;
+  left: 50%;
+  -webkit-transform: translateX(-270px);
+          transform: translateX(-270px);
+  width: 100%;
+  height: 4px;
+  max-width: 540px;
+  background-color: #E2DFDE;
+  opacity: 1;
+}
+
+.exterior__scrollbar.swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: #032D5D;
+}
+
+@media (max-width: 1200px) {
+  .exterior__slider.swiper-container {
+    max-width: 900px;
+  }
+  .exterior__slide {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .exterior__slider.swiper-container {
+    max-width: 700px;
+  }
+  .exterior__slide {
+    max-width: 700px;
+  }
+  .exterior__scrollbar.swiper-scrollbar {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exterior__slider.swiper-container {
+    max-width: 500px;
+  }
+  .exterior__slide {
+    max-width: 500px;
+  }
+  .exterior__scrollbar.swiper-scrollbar {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .exterior {
+    padding-top: 64px;
+    padding-bottom: 92px;
+  }
+  .exterior__slider.swiper-container {
+    max-width: 300px;
+  }
+  .exterior__slide {
+    max-width: 300px;
+  }
+  .exterior__scrollbar.swiper-scrollbar {
+    bottom: 65px;
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 375px) {
+  .exterior__slider.swiper-container {
+    max-width: 280px;
+  }
+  .exterior__slide {
+    max-width: 280px;
+  }
+}
