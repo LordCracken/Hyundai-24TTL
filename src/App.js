@@ -5,6 +5,7 @@ import Request from './Components/Request';
 import Benefits from './Components/Benefits';
 import Exterior from './Components/Exterior';
 import LearnMore from './Components/LearnMore';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Benefits />
       <Exterior />
       <LearnMore />
+      <Footer />
     </>
   );
 }
